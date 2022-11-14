@@ -1,0 +1,31 @@
+.contenedor-posicionado{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: yellow;
+    top: 200px;
+}
+
+
+
+.elemento{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    position: sticky;
+    top: 200px;
+    left:200px;
+}
+/*position
+static
+relative(modifica la posicion con top bottom left rigth)
+absolute(la posicion es relatica al contenedor mas cercano
+    que tenga posicion relativa o absoluta)
+fixed(las propiedades se aplican relativamente a la
+     pantalla vh)
+sticky (intercambia los valores entre el relative 
+    y el fixed si el elemento se sale del vh
+    cuando llega al top se vuelve relative y cuando
+    sale del vh se vuelve fixed)
+*/
+
