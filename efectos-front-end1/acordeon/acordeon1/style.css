@@ -1,0 +1,154 @@
+:root{
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+    --grayish-blue: hsl(229, 8%, 60%);
+    --very-dark-blue: hsl(229, 31%, 21%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    width: 100%;
+}
+.questions{
+    width: 50%;
+    margin: 40px auto;
+    text-align: start;
+}
+.question__subtitle{
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--very-dark-blue);
+    text-align: center;
+}
+.question__paragraph{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin: 1.2em;
+    padding: 20px;
+    text-align: center;
+}
+.question__title{
+    border-bottom: 1px solid var(--grayish-blue);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 20px 20px;
+    font-size: 1em;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    justify-content: space-between;
+}
+.question__arrow{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.question__text{
+    color: var(--grayish-blue);
+    margin: 20px 20px;
+    line-height: 1.5;
+}
+.question__answer{
+    display: none;
+}
+
+.question__answer--show{
+    display: block;
+}
+.questions__cta{
+    display: block;
+    width: 40%;
+    text-decoration: none;
+    background-color: var(--soft-blue);
+    color: #fff;
+    padding: 1.3em ;
+    border-radius: 12px;
+    margin: 40px auto;
+    margin-bottom: 80px;
+    text-align: center;
+    
+}
+.contact{
+    display: grid;
+    text-align: center;
+    padding-bottom: 80px;
+    background-color: var(--soft-blue);
+    padding-top: 80px;
+    height: 400px;
+    line-height: 2.5em;
+    color: #fff;
+}
+.contact__legend{
+    font-size: 1.3em;
+}
+.contact__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 30px;
+}
+.contact__input{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid var(--soft-red);
+    border-radius: 5px;
+}
+.contact__cta{
+    text-decoration: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1em;
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    background-color: var(--soft-red);
+    padding: .5em;
+}
+.footer{
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    display: grid;
+    
+}
+.footer__logo{
+    margin: 0 auto;
+    width: 40%
+    
+}
+.footer__list{
+    list-style: none;
+    line-height: 3.5;
+}
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+}
+.footer__attribution{
+    font-size: 0.5em;
+    align-self: end;
+}
+.footer__social{
+    display: grid;
+    grid-auto-flow: column; 
+    justify-content: space-around;
+    width: 40%; 
+    margin: 30px auto; 
+}
+
+.thanks a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}

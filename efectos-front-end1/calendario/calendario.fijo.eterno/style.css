@@ -1,0 +1,26 @@
+body {
+    font-family: Geneva, Tahoma, "Nimbus Sans L", sans-serif;
+    text-align: center;
+    }
+h1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;}
+
+#tecla {
+    border-style:solid;
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+th, td {
+    height: 43px;
+    width: 42px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    }

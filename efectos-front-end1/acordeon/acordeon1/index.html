@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./mediaquery.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<!-- CSS only -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+crossorigin="anonymous"
+/>
+<!-- JavaScript Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"
+></script>
+  
+  <title>Acordeon</title>
+
+
+</head>
+<body>
+
+<section class="questions">
+  <h2 class="question__subtitle">Frequently Asked Questions</h2>
+
+  <!-- <p class="question__paragraph">Here are some of our FAQs. If you have any other questions you’d like 
+    answered please feel free to email us.</p> -->
+
+    <div class="layout">
+      <div class="question question--active">
+        <article class="question__card">
+          <h3 class="question__title">What is a Bookmark?
+            <img src="./images/arrow-down-blue.svg" alt="" class="question__arrow question__arrow--active">
+          </h3>
+        </article>
+          <div class="question__answer question__answer--show">
+            <p class="question__text" data-question="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+      </div>
+
+      <div class="question">
+        <article class="question__card">
+          <h3 class="question__title">How can I request a new browser?
+            <img src="./images/arrow-down-blue.svg" alt="" class="question__arrow">
+          </h3>
+        </article>
+          <div class="question__answer">
+            <p class="question__text"data-question="1"> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+        </div>
+
+      <div class="question">
+        <article class="question__card">
+          <h3 class="question__title">Is there a mobile app?
+            <img src="./images/arrow-down-blue.svg" alt="" class="question__arrow">
+          </h3>
+        </article>
+          <div class="question__answer">
+            <p class="question__text"data-question="2">  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+          
+      <div class="question">
+        <article class="question__card">
+          <h3 class="question__title">What about other Chromium browsers?
+            <img src="./images/arrow-down-blue.svg" alt="" class="question__arrow">
+          </h3>
+        </article>
+          <div class="question__answer">
+            <p class="question__text" data-question="3">  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+          <!-- <a href="" class="questions__cta">More Info</a> -->
+      </div>
+
+</section>
+
+  <script src="./questions.js"></script>
+
+</body>
+</html>

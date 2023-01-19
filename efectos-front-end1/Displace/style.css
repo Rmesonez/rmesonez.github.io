@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 50%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+    
+}
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+    width: 650px;
+    height: 130px;
+}
+.contenedor > ul{
+    list-style: none;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor > ul > li{
+    font-size: 100px;
+    font-weight: bold;
+    color: darkgreen;
+    text-shadow: 4px 4px 7px gray;
+}
