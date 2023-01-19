@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="split">
+            <h1>Cosas por Hacer</h1>
+            <form id="todo_form">
+                <label>Actividad</label>
+                <input type="text" placeholder="Hacer las Compras..." autocomplete="off" id="todo">
+                <input type="submit" value="Registrar Actividad" id="date">
+            </form>
+        </div>
+        <div class="split">
+            <h1>Cosas por Hacer</h1>
+            <ol id="todo_list">
+
+            </ol>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+    <script>
+        window.addEventListener('load', init, false);
+        window.addEventListener('storage', actividadAgregada, false);
+        var storage;
+        var clave = 'tutorial_storage';
+        function init(){
+            var formulario = document.querySelector('#todo_form');
+            storage = new Lista (clave);
+            formulario.addEventListener('submit', agregarActividad, false);
+            actualizarLista(storage.obtenerActividades());
+        }
+        function agregarActividad(e){
+            e.preventDefault();
+            var actividad = document.querySelector('#todo').value;
+            if (storage.agregarActividad(actividad));
+            console.log("Se Agrego la Actividad");
+            actualizarLista(storage.obtenerActividades());
+        }
+        function actualizarLista(actividades){
+            var lista = document.querySelector('#todo_list');
+            lista.innerHTML = "";
+            if (actividades != null){
+                for(i in actividades){
+                    var actividad = actividades[i];
+                    var elemento = document.createElement('li');
+                    elemento.innerHTML = actividad;
+                    lista.appendChild(elemento);
+                }
+            }
+            }
+            function actividadAgregada(e){
+                console.log(e.key);
+                    actualizarLista(storage.obtenerActividades());
+         }
+            
+        
+    </script>
+</body>
+</html>

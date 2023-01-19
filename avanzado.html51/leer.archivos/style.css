@@ -1,0 +1,8 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.half{
+    width: 50%;
+    display:inline-block;
+    vertical-align: top;
+}

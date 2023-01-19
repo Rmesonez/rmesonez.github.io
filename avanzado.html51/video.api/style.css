@@ -1,0 +1,15 @@
+#container {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-color: #eee;
+}
+#porcentaje{
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(200,50,50);
+}

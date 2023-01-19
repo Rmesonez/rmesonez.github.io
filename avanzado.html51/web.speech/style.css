@@ -1,0 +1,24 @@
+video{
+    width: 40%;
+    height: 30em;
+    object-fit: fill;
+    margin: 80px auto;
+    display: block;
+}
+#container {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    background-color: #eee;
+    display: flex;
+    display: inline-block;
+    align-content: center;
+}
+#porcentaje{
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(200,50,50);
+}
