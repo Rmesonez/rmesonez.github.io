@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list__item{
+    list-style: none;
+    position: relative;
+}
+.custom__list{
+    margin: 40px 40px;
+}
+.list__item::before{
+    content: "\f00c";
+    position: absolute;
+    top: 0.30em;
+    left: -1.3em;
+    width: .5em;
+    height: .5em;
+    font-family: Font Awsome 6 Free;
+    border-radius: 50%;
+    background-color: red;
+}

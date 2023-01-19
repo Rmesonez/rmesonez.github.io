@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.overflow__control{
+    overflow-x: hidden;
+}
+.main__container{
+    white-space: nowrap;
+    position: relative;
+    left: -25%;
+    transition: left 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__container--show{
+    left: 0%;
+}
+
+.main__container * {
+    white-space: normal;
+}
+.main__container .content, .main__container .lateral__menu{
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    height: 100vh;
+}
+.main__container .content{
+    width: 100%;
+    background-color: #fff;
+}
+.main__container .lateral__menu{
+    width: 25%;
+    background-color: #303f9f;
+    color: #fff;
+
+}
+.lateral__menu{
+
+    padding: 20px;
+    text-align: center; 
+
+}
+.menu__title{
+    font-size: 2rem;
+    margin: 50px 0;
+}
+.menu__item{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 2px solid;
+    padding-bottom: 10px ;
+
+}
+.content{
+    font-size: 1.2em;
+}
+
+
+
+
+.hero__image{
+    height: 75vh;
+    background-image: url(./images/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+
+}
+.container{
+    padding: 40px 20px;
+    text-shadow: 0px 0px 4px yellow;
+}
+.hero__title{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero__text{
+    font-size: 1.5rem;
+}
+
+.nav{
+    background-color: #303f9f;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__img{
+    margin: 10px;
+}
+.nav li{
+    display: inline-block;
+    margin-right: 1em;
+    padding: 10px;
+}
+.nav.pined{
+    position: fixed;
+    top: 0;
+}

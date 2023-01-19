@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #eee;
+}
+.slider{
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+.element{
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 0px 10px rgba(0,0,0,0.5);
+
+    transition: left .5s;
+}
+.element1{
+    background-image: url(../images/sala1.jpg);
+}
+.element2{
+    background-image: url(../images/sala2.jpg);
+}
+.element3{
+    background-image: url(../images/sala3.jpg);
+}
+.element.active{
+    z-index: 2;
+    left: 0px;
+}
+.element.start-out{
+    z-index: 1;
+}

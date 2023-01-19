@@ -1,0 +1,30 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #fff;
+    height: 200px;
+    width: 300px;
+    position: relative;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right
+    top, #1f1658, #4f2a7a, #81409b, #b556bb, #ed6dd8);
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+    z-index: -1;
+/*para hacer la sombra en el top o bottom hacer el height mas pequeño
+y moverlo en coordenadas*/
+}
