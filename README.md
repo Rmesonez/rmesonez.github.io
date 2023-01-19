@@ -11,6 +11,10 @@ y todas hechas con html css y js
 frontend menthor 
 posee adentro proyectos individuales
 al igual que avanzado html5
+y efectos front end
+
+
+todos disponibles y funcionales
 
 correo rmesonez@gmail.com
 linkedin https://www.linkedin.com/reinaldomesonez
