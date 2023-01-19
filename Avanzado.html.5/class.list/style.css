@@ -1,0 +1,11 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #222;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.rojo{
+    background-color: rgb(200,50,50);
+    border-radius: 200px;
+}
