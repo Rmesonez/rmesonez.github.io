@@ -1,0 +1,214 @@
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --padding-container: 7rem 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--padding-container); 
+}
+.figure{
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.hero__header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.hero__title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1rem;
+}
+.hero__paragraph{
+    font-size: 1.1rem;
+    color: var(--Light-Blue);
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+.hero__links{
+    width: 100%;
+    display: block;
+    padding: 1rem 2rem;
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px auto;
+    box-shadow: 0 0px 10px -5px var(--Strong-Cyan);
+}
+.hero__links--download{
+    background-color: var(--Light-Blue);
+    box-shadow: 0 0px 10px  -5px var(--Light-Blue);
+}
+.hero__main{
+    --padding-container: 0;
+}
+.hero__section{
+    --padding-container: 7em 0  3em 0 ;
+}
+.main__container{
+    --padding-container: 2em 0;
+}
+.section__header{
+    --padding-container: 7em 0  3em 0 ;
+}
+.logo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    /* --padding-container: 0; */
+}
+/* .logo{
+    width: 180px;
+    margin: 30px auto;
+} */
+
+.footer{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.footer__logo{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+.footer__nav{
+    margin: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer__links{
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+.footer__links:hover{
+    text-decoration: underline;
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.attribution{
+    margin-bottom: 0;
+
+}
+
+
+
+
+@media (min-width: 768px){
+    .hero__links{
+        display: inline;
+        margin: 20px 10px;
+        /* box-shadow: 0 0px 5px  var(--Strong-Cyan); */
+    }
+    .main__container{
+        display: flex;
+        align-items: center;
+    }
+    .main__figure{
+        max-width: 700px;
+        flex: 1;
+    }
+    .main__texts{
+        width: auto;
+        text-align: left;
+        margin: 0 40px;
+    }
+    .hero__title--main{
+        font-size: 1rem;
+    } 
+    .hero__paragraph--main{
+        font-size: .7rem;
+    } 
+    .section__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .section__texts{
+        height: max-content;
+        flex: 1;
+    }
+    .section__title{
+        font-size: 1.2rem;
+    }
+    .section__paragraph{
+        font-size: .7rem;
+    }
+    .logo__container{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+    }
+    .logo{
+        min-width: 100px;
+        max-width: 130px;
+        flex: 1;
+    }
+    .footer{
+        position: relative;
+        display: flex;
+        gap: 2.5em;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        gap: 1.5em;
+        height: 100px;
+        width: 50%;
+        flex-wrap: wrap; 
+    }
+    .footer__social{
+        margin: 0;
+        margin-left: auto;
+    }
+    .attribution{
+        position: absolute;
+        display: none;
+        bottom: 0;
+        left: 45%;
+    }
+}
