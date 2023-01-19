@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100vh;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/imagenes/fondo.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+}
+
+
+header .membrete {
+  justify-items: center;
+  margin: auto;
+}
+
+header nav a {
+  color: #05aaaa;
+}
+
+
+h1 {
+  color: firebrick;
+  font-size: 60px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 5px grey;
+}
+
+h2 {
+  color: hsl(0, 89%, 26%);
+  font-size: 45px;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+.distribuidores {
+  color: hsl(0, 92%, 10%);
+  font-size: 35px;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+.distribuidores a {
+  text-decoration: none;
+  color: firebrick;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -1;
+}
+
+.distribuidores a:hover {
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+span {
+  font-size: 15px;
+}
+
+.polymers {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 400px;
+  
+}
+
+section .polymers img {
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  50% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  100% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+
+.cv h4 {
+  color: hsl(0, 93%, 26%);
+  font-size: 35px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-indent: 3px;
+}
+
+.tipos {
+  font-size: 25px;
+  font-variant: small-caps;
+  text-align: justify;
+  margin-left: 400px;
+}
+
+.materiales h2 {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+
+.servicio {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  border: 5px solid #003333;
+  border-radius: 10px;
+  border-style: groove;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.servicio img {
+  width: auto;
+  height: 100%;
+}
+
+/*.servicio:hover img {
+  transform: scale(1.6) rotate(30deg);
+}*/
+
+.consigna {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-align: center;
+  margin: auto;
+  color: rgb(7, 7, 140);
+}
+
+.contacto img{
+  width: 100px;
+}
+
+.contacto {
+  font-size: 60px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  color: rgb(4, 4, 61);
+}
+.contacto li{
+  cursor: pointer;
+}
+
+.contacto img{
+  width: 80px;
+}
+
+footer  { 
+  background-color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+
+/*acerca de */
+
+.resena h3 {
+  color: hsl(0, 90%, 12%);
+  font-size: 40px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.resena p {
+  color: darkblue;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  font-variant: small-caps;
+}
+
+.colaboradores {
+  display: flex;
+}
+
+.sergio img {
+  border-radius: 100px;
+  margin-left: 45%;
+}
+
+.opto img {
+  border-radius: 100px;
+  margin-left: 40%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .polymers {
+    padding-left: 100px;
+  }
+
+  .acuity a {
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .tipos {
+    font-size: 25px;
+    margin-left: 150px;
+  }
+
+  section .servicio h6 {
+    left: 0px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  header nav a {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  h1 {
+    flex-wrap: nowrap;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    flex-wrap: nowrap;
+    font-size: 18px;
+  }
+
+  .distribuidores {
+    font-size: 15px;
+  }
+
+  .distribuidores a {
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  section .polymers img {
+    display: none;
+  }
+
+  .cv h4 {
+    font-size: 20px;
+  }
+
+  .tipos {
+    font-size: 13px;
+    margin-left: 50px;
+  }
+
+  .materiales h2 {
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .iframe {
+    margin-left: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .acuity {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .acuity a {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .acuity a:hover {
+    background-color: black;
+    border-radius: 7px;
+    color: #fff;
+    padding: 10px;
+    font-style: italic;
+  }
+
+  .servicio {
+    width: 500px;
+    height: 300px;
+    position: relative;
+  }
+
+  section .servicio h6 {
+    position: absolute;
+    flex-wrap: nowrap;
+    top: 40%;
+    right: 20px;
+    font-size: 8px;
+    overflow: hidden;
+  }
+
+
+  .consigna {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  footer {
+    display: flex;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  }
+
