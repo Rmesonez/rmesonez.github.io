@@ -96,6 +96,30 @@ img{
     font-weight: 700;
 }
 
+.manejos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.manejos ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.html{
+    width: 140px;
+    height: 100%;
+}
+
+.bootstrap{
+    width: 140px;
+    height: 50px;
+    overflow: hidden;
+}
+
 button{
     background-color: #0b1a31;
     color: white;
