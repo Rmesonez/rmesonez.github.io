@@ -41,9 +41,40 @@ img{
 .container-faq .title-faq {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-variant: small-caps;
+    background-color: #111;
+    padding:30px;
+    border-radius: 15px;
+    color: white;
+}
+
+.title{
+    animation: neonGlow 2s infinite alternate ease-in-out;
+}
+
+@keyframes neonGlow {
+    0%{
+        text-shadow: 0 0 10px rgba(255, 255, 255 , .8),
+                    0 0 20px rgba(255, 255, 255 , .8),
+                    0 0 22px rgba(255, 255, 255 , .8),
+                    0 0 40px rgba(66, 220, 219, .8),
+                    0 0 60px rgba(66, 220, 219, .8),
+                    0 0 80px rgba(66, 220, 219, .5),
+                    0 0 140px rgba(66, 220, 219, .5),
+                    0 0 200px rgba(66, 220, 219, .5);
+    }
+    100%{
+        text-shadow: 0 0 2px rgba(255, 255, 255 , .8),
+                        0 0 8px rgba(255, 255, 255 , .8),
+                        0 0 10px rgba(255, 255, 255 , .8),
+                        0 0 20px rgba(66, 220, 219, .8),
+                        0 0 30px rgba(66, 220, 219, .8),
+                        0 0 40px rgba(66, 220, 219, .5),
+                        0 0 50px rgba(66, 220, 219, .5),
+                        0 0 80px rgba(66, 220, 219, .5);
+    }
 }
 
 .container-faq .item-faq {
@@ -98,26 +129,7 @@ img{
 
 .manejos{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-.manejos ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.html{
-    width: 140px;
-    height: 100%;
-}
-
-.bootstrap{
-    width: 140px;
-    height: 50px;
-    overflow: hidden;
+    gap: 10px;
 }
 
 button{
@@ -215,6 +227,7 @@ p.author a {
 footer{
     animation: scale 3s linear infinite;
 }
+
 @keyframes scale{
     0%{
         transform: scale(0.8);
@@ -251,3 +264,4 @@ footer{
         border-radius: 0 0 10px 10px;
     }
 }
+
