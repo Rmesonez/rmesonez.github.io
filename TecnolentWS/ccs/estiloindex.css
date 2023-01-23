@@ -1,7 +1,5 @@
 * {
   margin: 0;
-  max-width: 100%;
-  max-height: 100vh;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -9,10 +7,10 @@
 }
 
 body {
-  background-image: url(/imagenes/fondo.jpg);
-  background-repeat: repeat;
+  background-image: url(../imagenes/gotas.jpg);
   background-size: cover;
-  height: 100%;
+  background-repeat: repeat;
+  height: max-content;
 }
 
 header {
@@ -24,11 +22,11 @@ header {
 
 header .membrete {
   justify-items: center;
-  margin: auto;
+  margin: 20px auto;
 }
 
 header nav a {
-  color: #05aaaa;
+  color: darkblue;
 }
 
 
@@ -75,12 +73,11 @@ span {
 }
 
 .polymers {
+  margin: 10px auto;
   background-color: #ffffff;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 0 400px;
-  
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
 }
 
 section .polymers img {
@@ -123,6 +120,9 @@ section .polymers img {
   margin-top: 50px;
 }
 
+.carousel{
+  margin-top: 50px;
+}
 
 .servicio {
   width: 600px;
@@ -142,10 +142,6 @@ section .polymers img {
   width: auto;
   height: 100%;
 }
-
-/*.servicio:hover img {
-  transform: scale(1.6) rotate(30deg);
-}*/
 
 .consigna {
   margin-top: 50px;
@@ -176,14 +172,17 @@ section .polymers img {
 }
 
 .contacto img{
-  width: 80px;
+  width: 50px;
 }
 
 footer  { 
-  background-color: #fff;
   font-size: 15px;
   cursor: pointer;
   margin-bottom: 15px;
+}
+
+.consigna button a{
+  color: darkblue
 }
 
 
@@ -225,22 +224,7 @@ footer  {
 }
 
 
-@media screen and (max-width: 1200px) {
-  h2 {
-    font-size: 40px;
-  }
 
-  .polymers {
-    padding-left: 100px;
-  }
-
-  .acuity a {
-    padding: 5px;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
 
 @media screen and (max-width: 896px) {
   .tipos {
@@ -270,7 +254,10 @@ footer  {
     flex-wrap: nowrap;
     font-size: 18px;
   }
+  .membrete img{
+   width: 350px;
 
+  }
   .distribuidores {
     font-size: 15px;
   }
@@ -331,7 +318,7 @@ footer  {
   }
 
   .servicio {
-    width: 500px;
+    width: 350px;
     height: 300px;
     position: relative;
   }
@@ -362,3 +349,28 @@ footer  {
 
   }
 
+  @media screen and (max-width: 375px) {
+    .header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .membrete {
+      width: 150px;
+      margin: 0 auto;
+    }
+  
+    .polymers {
+      padding-left: 100px;
+    }
+  
+    .acuity a {
+      padding: 5px;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
