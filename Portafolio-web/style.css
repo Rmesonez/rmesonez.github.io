@@ -42,17 +42,18 @@ img{
     margin: 20px auto;
     flex-wrap: wrap;
     background-color: white;
+    position: relative;
 }
 .glow::before, .glow::after {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 320px;
+    top: 0px;
+    left: -2pxpx;
     background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66,
      #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
     background-size: 400%;
-    width: calc(55% + 10px);
-    height: calc(111% + 27px);
+    width: calc(100% + 5px);
+    height: calc(100% + 6px);
     z-index: -1;
     border-radius: 15px;
     animation: glow 20s linear infinite;
@@ -277,12 +278,10 @@ footer{
     }
 }
 @media screen and (max-width: 375px){
-    .glow::before, .glow::after {
-        top: 24px;
-        left: 20px;
-        width: 90%;
-        height: 187%;
+    .glow::after, .glow::before{
+        display: none;
     }
+
     .container-faq .item-faq .question {
         flex-direction: column;
     }
@@ -344,11 +343,8 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .glow::before, .glow::after {
-        top: 24px;
-        left: 57px;
-        width: 85%;
-        height: 187%;
+    .glow::after, .glow::before{
+        display: none;
     }
     .container {
         width: 90%;
