@@ -1,0 +1,434 @@
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-variant:small-caps;
+    color: yellow;
+}
+
+body{
+    background: radial-gradient(orange,black);
+}
+
+.flex-contenedor{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    /* padding: 20px; */
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.caja{
+    width: 380px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.imagen{  
+    /* border: 2px solid lightblue; */
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 130px;
+    margin: auto;
+   }
+
+/* .ac{  
+    background: url(/imagenes/acdc-removebg-preview.png);
+    background-position: center; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    object-fit: contain;  
+
+}*/
+
+.ac{
+    animation-name:  zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.ac:hover{
+    animation-play-state: paused;
+}
+
+@keyframes zoom{
+    0%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/acdc-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+    50%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/acdc-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.7,.7,.7); 
+    }
+    100%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/acdc-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+}
+
+.acdc{
+    background: url(/imagenes/ac.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.linkin{
+    animation-name:  zoom1;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;   
+}
+
+.linkin:hover{
+    animation-play-state: paused;
+}
+
+@keyframes zoom1{
+    0%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/linkinpark-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+    50%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/linkinpark-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.7,.7,.7); 
+    }
+    100%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/linkinpark-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+}
+
+.lk{
+    background: url(/imagenes/linkin.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.iron{  
+    animation-name:  zoom2;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+
+.iron:hover{
+    animation-play-state: paused;
+}
+
+@keyframes zoom2{
+    0%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/iron-maiden.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+    50%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/iron-maiden.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.7,.7,.7); 
+    }
+    100%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/iron-maiden.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+}
+
+.ironmaiden{
+    background: url(/imagenes/iron.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.aero{  
+    animation-name:  zoom3;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+
+.aero:hover{
+    animation-play-state: paused;
+}
+
+@keyframes zoom3{
+    0%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/aerosmith-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+    50%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/aerosmith-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.7,.7,.7); 
+    }
+    100%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/aerosmith-removebg-preview.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+}
+
+.aerosmith{
+    background: url(/imagenes/aero.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.nirvan{  
+    animation-name:  zoom4;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+
+.nirvan:hover{
+    animation-play-state: paused;
+}
+
+@keyframes zoom4{
+    0%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/nirvana.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+    50%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/nirvana.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.7,.7,.7); 
+    }
+    100%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/nirvana.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+}
+
+.nirvana{
+    background: url(/imagenes/concierto-nirvana.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.metallic{  
+    animation-name:  zoom5;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+
+.metalic:hover{
+    animation-play-state: paused;
+}
+
+@keyframes zoom5{
+    0%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/metallica.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+    50%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/metallica.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.7,.7,.7); 
+    }
+    100%{
+        width: 90%;
+        height: 200px;
+        background: url(/imagenes/metallica.png);
+        background-position: center; 
+        background-size: contain; 
+        background-repeat: no-repeat;
+        object-fit: contain; 
+        transform: scale3d(.9,.9,.9); 
+    }
+}
+
+.metallica{
+    background: url(/imagenes/metal.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.box-left{
+    /* border: 2px solid #000; */
+    /* border-radius: 15px; */
+    /* background-color: #fff; */
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 20px;
+    font-variant: small-caps;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width:25%;
+    margin: 10px auto 10px 50px;
+}
+
+button{
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.box-rigth{
+    /* border: 2px solid #000; */
+    /* border-radius: 15px; */
+    /* background-color: #fff; */
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    font-variant: small-caps;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width:25%;
+    margin: 10px 50px 10px 30px;
+}
+
+.box-rigth:hover{
+    width: 100px;
+    color: #000;
+    font-variant: small-caps;
+    background-color: #FFF;
+    border-radius: 16px;
+    border: 2px solid rgb(88, 87, 87;
+    box-shadow: inset 0px 0px 10px 1px black;
+    
+}
+
