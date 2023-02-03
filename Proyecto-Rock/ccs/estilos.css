@@ -68,7 +68,7 @@ body{
     0%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/acdc-removebg-preview.png);
+        background: url(../imagenes/acdc-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body{
     50%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/acdc-removebg-preview.png);
+        background: url(../imagenes/acdc-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -88,7 +88,7 @@ body{
     100%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/acdc-removebg-preview.png);
+        background: url(../imagenes/acdc-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body{
 }
 
 .acdc{
-    background: url(/imagenes/ac.jpg);
+    background: url(../imagenes/ac.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ body{
     0%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/linkinpark-removebg-preview.png);
+        background: url(../imagenes/linkinpark-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -132,7 +132,7 @@ body{
     50%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/linkinpark-removebg-preview.png);
+        background: url(../imagenes/linkinpark-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -142,7 +142,7 @@ body{
     100%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/linkinpark-removebg-preview.png);
+        background: url(../imagenes/linkinpark-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -152,7 +152,7 @@ body{
 }
 
 .lk{
-    background: url(/imagenes/linkin.jpg);
+    background: url(../imagenes/linkin.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ body{
     0%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/iron-maiden.png);
+        background: url(../imagenes/iron-maiden.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -186,7 +186,7 @@ body{
     50%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/iron-maiden.png);
+        background: url(../imagenes/iron-maiden.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -196,7 +196,7 @@ body{
     100%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/iron-maiden.png);
+        background: url(../imagenes/iron-maiden.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -206,7 +206,7 @@ body{
 }
 
 .ironmaiden{
-    background: url(/imagenes/iron.jpg);
+    background: url(../imagenes/iron.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ body{
     0%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/aerosmith-removebg-preview.png);
+        background: url(../imagenes/aerosmith-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -240,7 +240,7 @@ body{
     50%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/aerosmith-removebg-preview.png);
+        background: url(../imagenes/aerosmith-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -250,7 +250,7 @@ body{
     100%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/aerosmith-removebg-preview.png);
+        background: url(../imagenes/aerosmith-removebg-preview.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -260,7 +260,7 @@ body{
 }
 
 .aerosmith{
-    background: url(/imagenes/aero.jpg);
+    background: url(../imagenes/aero.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@ body{
     0%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/nirvana.png);
+        background: url(../imagenes/nirvana.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -294,7 +294,7 @@ body{
     50%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/nirvana.png);
+        background: url(../imagenes/nirvana.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -304,7 +304,7 @@ body{
     100%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/nirvana.png);
+        background: url(../imagenes/nirvana.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -314,7 +314,7 @@ body{
 }
 
 .nirvana{
-    background: url(/imagenes/concierto-nirvana.jpg);
+    background: url(../imagenes/concierto-nirvana.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -338,7 +338,7 @@ body{
     0%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/metallica.png);
+        background: url(../imagenes/metallica.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -348,7 +348,7 @@ body{
     50%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/metallica.png);
+        background: url(../imagenes/metallica.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -358,7 +358,7 @@ body{
     100%{
         width: 90%;
         height: 200px;
-        background: url(/imagenes/metallica.png);
+        background: url(../imagenes/metallica.png);
         background-position: center; 
         background-size: contain; 
         background-repeat: no-repeat;
@@ -368,7 +368,7 @@ body{
 }
 
 .metallica{
-    background: url(/imagenes/metal.jpg);
+    background: url(../imagenes/metal.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -427,7 +427,7 @@ button{
     font-variant: small-caps;
     background-color: #FFF;
     border-radius: 16px;
-    border: 2px solid rgb(88, 87, 87;
+    border: 2px solid rgb(88, 87, 87);
     box-shadow: inset 0px 0px 10px 1px black;
     
 }
