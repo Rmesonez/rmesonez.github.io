@@ -6,9 +6,9 @@ html{
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
@@ -32,18 +32,23 @@ svg {
       top: 0;
       z-index: 0;
 }
-
-  .btn {
+.navbar{
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
       position: fixed;
       bottom: 5%;
-      right: 0px;
-      transform: translateX(-50%);
+      transform: translateX(30%);
+}
+
+  .btn {
+      margin: 0 auto;
       border: 1px solid #fff;
       border-radius: 5px;
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding: 0.5rem 0.7em;
-      background-color: transparent;
-      color: #ffffff;
+      background: #ffffff;
+      color: #1B1734;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       -webkit-font-smoothing: antialiased;
       cursor: pointer;
@@ -58,8 +63,8 @@ svg {
   }
 
   .btn:hover {
-      background: #ffffff;
-      color: #1B1734;
+      background: transparent;
+      color: #fff;
   }
 
   .front__title{
