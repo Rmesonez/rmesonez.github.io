@@ -126,6 +126,19 @@ footer{
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    .navbar{
+        font-size: 1rem;
+    }
+    .navlist{
+        flex-direction: column;
+        gap: -10px;
+        text-align: center;
+    }
+    .navlist a{
+        padding: 5px 10px;
+    }
+}  
 
 
 

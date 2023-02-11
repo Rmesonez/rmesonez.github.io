@@ -33,12 +33,13 @@ svg {
       z-index: 0;
 }
 .navbar{
-      width: 60%;
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: nowrap;
       position: fixed;
       bottom: 5%;
-      transform: translateX(30%);
+      
 }
 
   .btn {
@@ -97,4 +98,19 @@ svg {
         z-index: 10;
   }
 
-  
+@media screen and (min-width: 320px) and (max-width: 560px) {
+      .front__title{
+            font-size: 1.5rem;
+      }
+      .last__title{
+            font-size: 1.5rem;
+      }
+      .navbar a{
+            font-size: 0.8rem;
+            text-align: center;
+      }
+      button{
+            display: none;
+      }
+}
+      
