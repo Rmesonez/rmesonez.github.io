@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100%;
+    background-color: #000;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.16), 0 2px 10px rgba(0,0,0,.12);
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-top: 10px solid slateblue;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.img{
+    width: 100%;
+    height: 200px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: max-height;
+    object-position: center;
+}
+
+.card a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin: 20px auto;
+    cursor: pointer;
+    user-select: none;
+}
+
+.navbar{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navlist a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+    font-size: 25px;
+    color: white;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 235, 129);
+    font-size: 25px;
+}
+footer{
+    animation: scale 3s linear infinite;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+
+
+
