@@ -113,6 +113,7 @@ footer{
     animation: scale 3s linear infinite;
 }
 
+
 @keyframes scale{
     0%{
         transform: scale(0.8);
