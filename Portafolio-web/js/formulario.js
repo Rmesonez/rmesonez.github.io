@@ -103,7 +103,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.apellido && campos.nombre && campos.asunto && campos.correo && campos.telefono /*&& campos.area */ && terminos.checked ){
+	if(campos.apellido && campos.nombre && campos.asunto && campos.email && campos.telefono /*&& campos.area */ && terminos.checked ){
 		formulario.reset();
 		
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

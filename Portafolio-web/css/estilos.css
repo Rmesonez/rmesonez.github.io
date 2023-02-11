@@ -318,5 +318,10 @@ textarea{
         --sun-color: rgb(122, 118, 59);
         --moon-color: rgb(0, 26, 63);
     }
+
+    .nav-link{
+        color: var(--main-text-color);
+        border: 2px solid var(--main-text-color);
+    }
    
 }
