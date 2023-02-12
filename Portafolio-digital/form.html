@@ -29,12 +29,12 @@
             </svg>
                   
         </div>
-		<form action="https://formsubmit.co/rmesonez@gmail.com" method="POST" class="formulario" id="formulario" target="_blank">
+		<form class="formulario" id="formulario">
 			<!-- Grupo: Nombre -->
 			<div class="formulario__grupo" id="grupo__nombre">
-				<label for="name" class="formulario__label">Nombre</label>
+				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="name" id="nombre" placeholder="John Doe">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe" required>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -43,10 +43,10 @@
 			<div class="formulario__grupo" id="grupo__apellido">
 				<label for="apellido" class="formulario__label">Apellido</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Smith">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Smith" required>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+				<p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
 			</div>
 
 
@@ -74,7 +74,7 @@
 			<div class="formulario__grupo" id="grupo__email">
 				<label for="email" class="formulario__label">Email</label>
 				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="email" id="email" placeholder="correo@correo.com">
+					<input type="email" class="formulario__input" name="email" id="email" placeholder="correo@correo.com" required>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
@@ -84,10 +84,10 @@
 			<div class="formulario__grupo" id="grupo__telefono">
 				<label for="telefono" class="formulario__label">Teléfono</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" required>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				<!-- <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p> -->
 			</div>
 
 			<!-- Grupo: Asunto  -->
@@ -95,7 +95,7 @@
 			<div class="formulario__grupo asunto" id="grupo__asunto">
 				<label for="asunto" class="formulario__label">Asunto</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="Asunto">
+					<input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="Asunto" required>
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El asunto no puede estar vacio y el maximo son 50 caracteres.</p>
@@ -106,7 +106,7 @@
 			<div class="formulario__grupo text-area" id="grupo__area">
 				<!-- <label for="area" class="formulario__label">Descripcion</label> -->
 				<div class="formulario__grupo-input">
-					<textarea class="formulario__input" name="area" id="area" cols="30" rows="10" placeholder="Escribe Aquí"></textarea>
+					<textarea type="text" class="formulario__input" name="area" id="area" cols="30" rows="10" placeholder="Escribe Aquí" required></textarea>
 					<!-- <input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="Asunto"> -->
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
@@ -124,16 +124,17 @@
 			<!-- Grupo: Boton Enviar  -->
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
+				<input type="submit" id="button" class="formulario__btn" value="Enviar">
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
 
-			<div class="formulario__mensaje" id="formulario__mensaje">
+			<!-- <div class="formulario__mensaje" id="formulario__mensaje">
 				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			</div>
+			</div> -->
 			
 		</form>
 	</main>
+
 	<footer>
 		<p class="author">🪐 My <a href="./cv/Profile.pdf" download="./cv/Profile.pdf" target="_blank">Curriculum Vitae</a></p>
 	</footer>
@@ -141,6 +142,12 @@
 
 	<script src="./JS/formulario.js"></script>
 	<script src="./JS/dark-mode.js"></script>
+	<script src="./JS/form-emailsend.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<script>
+	emailjs.init('wSvLWTQIsz1oQmfmQ')
+	</script>
 </body>
 </html>

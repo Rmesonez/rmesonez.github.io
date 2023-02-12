@@ -59,18 +59,16 @@ const validarCampo = (expresion, input, campo) => {
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
-		setTimeout(() => {
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
 		campos[campo] = true;
-	},2000) }else {
+	 	}else {
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
-		setTimeout(() => {
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
 		campos[campo] = false;
-	},2000)}
+		}
 }
 
 // const validarPassword2 = () => {
@@ -104,8 +102,7 @@ formulario.addEventListener('submit', (e) => {
 
 	const terminos = document.getElementById('terminos');
 	if(campos.apellido && campos.nombre && campos.asunto && campos.email && campos.telefono /*&& campos.area */ && terminos.checked ){
-		formulario.reset();
-		
+				
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
@@ -121,3 +118,4 @@ formulario.addEventListener('submit', (e) => {
 	location.reload();
 	}, 4000);
 });
+
