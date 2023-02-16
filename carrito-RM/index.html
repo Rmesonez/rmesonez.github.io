@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechnO-Shopping</title>
+  <!--=============== FAVICON ===============-->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/styleslider.css">
+</head>
+
+<body>
+
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img class="nav__logo-icon" src="./assets/imagenes/computer.png" alt="">
+            <h1 class="nav-title"> Techn<span class="nav__title-span">o-</span>Shopping</h1>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link">Productos</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://rmesonez.github.io/hablando_de_mi/index.html" target="_blank" class="nav__link active-link">Información</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://rmesonez.github.io/Portafolio-digital/form.html" target="_blank" class="nav__link active-link">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div> -->
+      </div>
+
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+        <div class="nav__shop" id="cart-shop">
+          <i class='bx bx-cart-add'></i>
+          <span id="cart-count" class="count"></span>
+        </div>
+
+        <!-- <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-grid-alt'></i>
+        </div> -->
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== CART ====================-->
+  <div class="cart" id="cart">
+    <i class='bx bx-x cart__close' id="cart-close"></i>
+
+    <h2 class="cart__title-center"><i class='bx bx-cart'></i>  Mi Carrito</h2>
+
+    <div id="cart__container" class="cart__container">
+
+      <article class="cart__card">
+        <!-- <div class="cart__box">
+          <img src="assets/img/featured1.png" alt="Hoodies" class="cart__img">
+        </div>
+
+        <div class="cart__details">
+          <h3 class="cart__title">Hoodies <span class="cart__price">$456.00</span></h3>
+
+          <div class="cart__amount">
+            <div class="cart__amount-content">
+              <span class="cart__amount-box removeToCart" data-id="1">
+                <i class="bx bx-minus"></i>
+              </span>
+
+              <span class="cart__amount-number">1</span>
+
+              <span class="cart__amount-box addToCart" data-id="1">
+                <i class="bx bx-plus"></i>
+              </span>
+            </div>
+
+            <i class="bx bx-trash-alt cart__amount-trash deleteToCart" data-id="1"></i>
+          </div>
+
+          <span class="cart__subtotal">
+            <span class="cart__stock">Quedan 4 unidades</span>
+            <span class="cart__subtotal-price">$456.00</span>
+          </span>
+        </div> -->
+      </article>
+
+    </div>
+
+    <div class="cart__prices">
+      <span class="cart__prices-item"><span id="items-count"></span> Unidades</span>
+      <span class="cart__prices-total" id="cart-total"></span>
+    </div>
+
+    <div id="action-buttons" class="cart__checkout">
+      <button class="button cart__btn" id="cart-checkout" disabled><i class='bx bxs-check-shield'></i> Comprar</button>
+      <button class="button cart__btn" id="cart-empty" disabled><i class='bx bx-cart-alt'></i> Limpiar</button>
+    </div>
+
+  </div>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+
+    <a href="#Alienware" class="slider__top">
+      Top Products
+    </a>
+    <!--==================== HOME ====================-->
+    <section class="slider-section wrapper">
+
+      <div class="section-container content">
+        <!-- <div class="bg-shape"> -->
+          <div class="slider-container product-img">
+
+          </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <!--==================== PRODUCTS ====================-->
+    <section class="products" id="products">
+      <div class="products__container container">
+        <ul class="products__filters">
+          <li class="products__item active-product products__line" data-filter="all" category="all">
+            <h3 class="products__title">
+              Mostrar todo
+            </h3>
+            <span class="products__stock">
+              Mostrar todos los productos
+            </span>
+          </li>
+
+          <li class="products__item products__line active-product" data-filter=".laptops" category="Laptops">
+            <h3 class="products__title">
+              Laptops
+            </h3>
+            <span class="products__stock">
+              4 productos
+            </span>
+          </li>
+
+          <li class="products__item products__line" data-filter=".keyboards" category="Keyboards">
+            <h3 class="products__title">
+              Keyboards
+            </h3>
+            <span class="products__stock">
+              4 productos
+            </span>
+          </li>
+
+          <li class="products__item  products__line" data-filter=".tablets" category="Tablets">
+            <h3 class="products__title">
+            Tablets
+            </h3>
+            <span class="products__stock">
+              2 productos
+            </span>
+          </li>
+
+          <li class="products__item" data-filter=".watches" category="Watches">
+            <h3 class="products__title">
+              Watches
+            </h3>
+            <span class="products__stock">
+              1 productos
+            </span>
+          </li>
+
+        </ul>
+
+
+        <div class="products__content grid" id="products__content">
+
+          <article class="products__card hoodies">
+            <!-- <div class="products__shape">
+              <img src="assets/img/featured1.png" alt="Hoodies" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__name">Hoodies</h2>
+              <div class="">
+                <h3 class="products__price">$456.00</h3>
+                <span class="products__quantity">Quedan solo 5 unidades</span>
+              </div>
+              <button type="button" class="button products__button addToCart" data-id="1">
+                <i class="bx bx-plus"></i>
+              </button>
+            </div> -->
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <h3 class="footer__title">Localizacion</h3>
+
+        <ul class="footer__list">
+          <li>Quetzaltenango Guatemala</li>
+        </ul>
+      </div>
+      <div class="footer__content" id="info">
+        <h3 class="footer__title">Información</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="https://rmesonez.github.io/hablando_de_mi/index.html" target="_blank" class="footer__link">Sobre Mí</a>
+          </li>
+          <li>
+            <a href="https://rmesonez.github.io/Portafolio-digital/proyects.html" target="_blank" class="footer__link">Proyectos</a>
+          </li>
+          <li>
+            <a href="https://rmesonez.github.io/Portafolio-digital/form.html" target="_blank" class="footer__link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Productos</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Laptops</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Keyboards</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Tablets</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Watches</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Social</h3>
+
+        <ul class="footer__social">
+          <a href="https://www.linkedin.com/in/reinaldomesonez/" target="_blank" class="footer__social-link">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+
+          <a href="https://github.com/Rmesonez" target="_blank" class="footer__social-link">
+            <i class='bx bxl-github'></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <p class="author">🪐 My <a href="./cv/Profile.pdf" download="./cv/Profile.pdf" target="_blank">Curriculum Vitae</a></p>
+  </footer>
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+  </a>
+
+  <!--=============== MIXITUP FILTER ===============-->
+  <script src="assets/js/helpers/mixitup.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+  <script src="assets/js/main.js" type="module" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/database.js" defer></script>
+  <script src="assets/js/slider.js" defer></script>
+</body>
+
+</html>
