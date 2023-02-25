@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Title{
+    margin: 10px auto 40px;
+    animation: scale 3s linear infinite;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: gold;
+    font-size: 4rem;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+  }
+
+.Card{
+    border: 2px solid white;
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 10px grey;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding: 10px;
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.Random-btn{
+    width: 100px;
+    height: 50px;
+    border: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    color:darkred;
+}
+
+.Random-btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    gap: 7px;
+    font-size: 25px;
+    color: white;
+  
+  
+  }
+  p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 235, 129);
+    font-size: 25px;
+  }
+  .footer{
+    /* animation: scaled 3s linear infinite; */
+    position: absolute;
+    bottom: 0%;
+  }
+  /* @keyframes scaled{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+  } */
