@@ -16,7 +16,7 @@
 }
 
 .Title{
-    margin: 10px auto 40px;
+    margin: 10px auto 20px;
     animation: scale 3s linear infinite;
     font-weight: bold;
     font-variant: small-caps;
@@ -107,3 +107,14 @@
         transform: scale(0.8);
     }
   } */
+
+  @media screen and (min-width: 300px) and (max-width: 800px){
+    .Title{
+        position: absolute;
+        top: 0%;
+        text-align: center;
+    }
+    .Card{
+        margin-top: auto 0;
+    }
+  }

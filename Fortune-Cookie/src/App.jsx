@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react'
 
 function App() {
 
-  const backgrounds = [ 'url(/public/fondo1.png)', 'url(/public/fondo2.png)', 'url(/public/fondo3.png)', 'url(/public/fondo4.png)', 'url(/public/fondo5.png)'  ]
+  const backgrounds = [ 'url(/fondo1.png)', 'url(/fondo2.png)', 'url(/fondo3.png)', 'url(/fondo4.png)', 'url(/fondo5.png)'  ]
 
   const [ index, setIndex ] = useState ( 0 )
   const [ indexBackground, setIndexBackground] = useState ( 0 )
