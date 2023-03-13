@@ -22,8 +22,8 @@ function App() {
     }else{
       //continua avanzando
       //avanzar 
-      const random = Math.floor( 1 + Math.random()* 9 )
-      const backgroundRandom = Math.floor( Math.random()* 5 )
+      const random = Math.floor(Math.random()* phrases.length )
+      const backgroundRandom = Math.floor( Math.random()* backgrounds.length )
 
       setTimeout(() =>{
         setIndex( random )
